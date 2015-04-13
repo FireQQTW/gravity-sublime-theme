@@ -662,8 +662,19 @@
     },
     {
         "class": "tabset_control",
+        "settings": ["theme_tabs_dark"],
+        "tab_height": 39
+    },
+    {
+        "class": "tabset_control",
         "settings": ["tab_height_short"],
         "tab_height": 26
+    },
+    {
+        "class": "tabset_control",
+        "settings": ["theme_tabs_dark"],
+        "settings": ["tab_height_short"],
+        "tab_height": 32
     },
     {
         "class": "tabset_control",
@@ -672,11 +683,27 @@
     },
     {
         "class": "tabset_control",
+        "settings": ["theme_tabs_dark"],
+        "settings": ["tab_height_tall"],
+        "tab_height": 46
+    },
+    {
+        "class": "tabset_control",
         "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/tabset_background.png"
+    },
+    {
+        "class": "tabset_control",
+        "settings": ["theme_tabs_dark"],
+        "layer0.texture": "Theme - Gravity/Gravity/assets/tabset_background.png"
     },
     {
         "class": "tab_control",
         "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/tab_inactive_scroll.png"
+    },
+    {
+        "class": "tab_control",
+        "settings": ["theme_tabs_dark"],
+        "layer0.texture": "Theme - Gravity/Gravity/assets/tab_inactive_scroll.png"
     },
     {
         "class": "tab_control",
@@ -685,8 +712,20 @@
     },
     {
         "class": "tab_control",
+        "settings": ["theme_tabs_dark"],
+        "settings": ["!enable_tab_scrolling"],
+        "layer0.texture": "Theme - Gravity/Gravity/assets/tab_inactive.png"
+    },
+    {
+        "class": "tab_control",
         "attributes": ["selected"],
         "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/tab_active.png"
+    },
+    {
+        "class": "tab_control",
+        "attributes": ["selected"],
+        "settings": ["theme_tabs_dark"],
+        "layer0.texture": "Theme - Gravity/Gravity/assets/tab_active.png"
     },
     {
         // ! Tab labels
@@ -695,13 +734,30 @@
     },
     {
         "class": "tab_label",
+        "settings": ["theme_tabs_dark"],
+        "fg": [133, 133, 133],
+    },
+    {
+        "class": "tab_label",
         "parents": [{"class": "tab_control", "attributes": ["hover"]}],
         "fg": [51, 51, 51]
     },
     {
         "class": "tab_label",
+        "settings": ["theme_tabs_dark"],
+        "parents": [{"class": "tab_control", "attributes": ["hover"]}],
+        "fg": [221, 221, 221]
+    },
+    {
+        "class": "tab_label",
         "parents": [{"class": "tab_control", "attributes": ["selected"]}],
         "fg": [51, 51, 51]
+    },
+    {
+        "class": "tab_label",
+        "settings": ["theme_tabs_dark"],
+        "parents": [{"class": "tab_control", "attributes": ["selected"]}],
+        "fg": [221, 221, 221]
     },
     {
         // ! Tab close button
@@ -711,7 +767,15 @@
         "layer1.texture": "Theme - Gravity/Reverse Gravity/assets/tab_close_hover.png",
         "layer1.opacity": 0
     },
-        {
+    {
+        // ! Tab close button
+        "class": "tab_close_button",
+        "settings": ["theme_tabs_dark"],
+        "layer0.texture": "Theme - Gravity/Gravity/assets/tab_close.png",
+        "layer0.opacity": 0.3,
+        "layer1.texture": "Theme - Gravity/Gravity/assets/tab_close_hover.png",
+    },
+    {
         // ! Tab close button hover
         "class": "tab_close_button",
         "attributes": ["hover"],
@@ -727,6 +791,13 @@
         "layer1.opacity": 0
     },
     {
+        // ! Tab dirty button
+        "class": "tab_close_button",
+        "settings": ["theme_tabs_dark"],
+        "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
+        "layer0.texture": "Theme - Gravity/Gravity/assets/tab_dirty.png",
+    },
+    {
         // ! Tab dirty button hover
         "class": "tab_close_button",
         "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
@@ -734,6 +805,14 @@
         "layer1.texture": "Theme - Gravity/Reverse Gravity/assets/tab_dirty_hover.png",
         "layer0.opacity": 0,
         "layer1.opacity": 1.0
+    },
+    {
+        // ! Tab dirty button hover
+        "class": "tab_close_button",
+        "settings": ["theme_tabs_dark"],
+        "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
+        "attributes": ["hover"],
+        "layer1.texture": "Theme - Gravity/Gravity/assets/tab_dirty_hover.png",
     },
 
     // ! -- Tab set scroll left scroll right
@@ -747,8 +826,21 @@
     },
     {
         "class": "scroll_tabs_left_button",
+        "settings": ["theme_tabs_dark"],
+        "layer0.texture": "Theme - Gravity/Gravity/assets/arrow_left.png",
+        "layer0.opacity": 0.4,
+        "layer1.texture": "Theme - Gravity/Gravity/assets/arrow_left.png",
+    },
+    {
+        "class": "scroll_tabs_left_button",
         "attributes": ["hover"],
         "layer1.opacity": 0.3
+    },
+    {
+        "class": "scroll_tabs_left_button",
+        "settings": ["theme_tabs_dark"],
+        "attributes": ["hover"],
+        "layer1.opacity": 0.8
     },
     {
         "class": "scroll_tabs_right_button",
@@ -759,8 +851,21 @@
     },
     {
         "class": "scroll_tabs_right_button",
+        "settings": ["theme_tabs_dark"],
+        "layer0.texture": "Theme - Gravity/Gravity/assets/arrow_right.png",
+        "layer0.opacity": 0.4,
+        "layer1.texture": "Theme - Gravity/Gravity/assets/arrow_right.png",
+    },
+    {
+        "class": "scroll_tabs_right_button",
         "attributes": ["hover"],
         "layer1.opacity": 0.3
+    },
+    {
+        "class": "scroll_tabs_right_button",
+        "settings": ["theme_tabs_dark"],
+        "attributes": ["hover"],
+        "layer1.opacity": 0.8
     },
     {
         "class": "show_tabs_dropdown_button",
@@ -771,8 +876,21 @@
     },
     {
         "class": "show_tabs_dropdown_button",
+        "settings": ["theme_tabs_dark"],
+        "layer0.texture": "Theme - Gravity/Gravity/assets/arrow_down.png",
+        "layer0.opacity": 0.4,
+        "layer1.texture": "Theme - Gravity/Gravity/assets/arrow_down.png",
+    },
+    {
+        "class": "show_tabs_dropdown_button",
         "attributes": ["hover"],
         "layer1.opacity": 0.3
+    },
+    {
+        "class": "show_tabs_dropdown_button",
+        "settings": ["theme_tabs_dark"],
+        "attributes": ["hover"],
+        "layer1.opacity": 0.8
     },
 
     //
@@ -952,8 +1070,8 @@
     {
         // super + p
         "class": "quick_panel_row",
-        "layer0.tint": [252, 252, 252],
-        "layer1.tint": [252, 252, 252],
+        "layer0.tint": [235, 235, 235],
+        "layer1.tint": [221, 221, 221],
     },
     {
         // super + p
@@ -985,7 +1103,7 @@
 
     {
         "class": "mini_quick_panel_row",
-        "layer0.tint": [252, 252, 252]
+        "layer0.tint": [235, 235, 235]
     },
     {
         "class": "mini_quick_panel_row",

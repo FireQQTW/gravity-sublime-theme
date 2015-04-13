@@ -82,7 +82,7 @@
         "layer1.texture": "Theme - Gravity/Gravity/assets/tab_close_hover.png",
         "layer1.opacity": 0
     },
-        {
+    {
         // ! Tab close button hover
         "class": "tab_close_button",
         "attributes": ["hover"],
