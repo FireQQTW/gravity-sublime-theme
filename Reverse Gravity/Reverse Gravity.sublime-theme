@@ -1077,14 +1077,14 @@
         // super + p
         "class": "quick_panel_row",
         "attributes": ["selected"],
-        "layer0.tint": [93, 93, 93] // highlight
+        "layer0.tint": [142, 142, 142] // highlight
     },
     {
         "class": "quick_panel_label",
         "fg": [53, 53, 53, 255],
-        "match_fg": [59, 166, 219, 255], // highlight light
+        "match_fg": [89, 198, 255, 255], // highlight light
         "selected_fg": [255, 255, 255, 255],
-        "selected_match_fg": [59, 166, 219, 255] // color change while typing
+        "selected_match_fg": [144, 214, 251, 255] // color change while typing
     },
     {
         "class": "quick_panel_path_label",
@@ -1108,7 +1108,7 @@
     {
         "class": "mini_quick_panel_row",
         "attributes": ["selected"],
-        "layer0.tint": [93, 93, 93] // highlight
+        "layer0.tint": [142, 142, 142] // highlight
     },
 
     //
